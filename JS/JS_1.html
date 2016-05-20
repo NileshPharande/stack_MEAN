@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    	<h1>My first JAVA SCRIPT</h1>
+    	<button type="button" onclick="showDate()">Show Current Date</button>
+    	<p id="demo">None</p>
+    	<img id="myImage" onclick="changeImage()" src="pic_bulbOn.gif" width="100" hight="180">
+    	<p>Toogle bulb</p>
+    	<script type="text/javascript">
+    	
+    	    var showDate = function()
+    	    {
+    	    	document.getElementById("demo").innerHTML = Date();
+    	    }
+
+    	    var changeImage = function()
+    	    {
+    	    	console.log("Coming to change Image.");
+    	    	var imageTag = document.getElementById("myImage");
+    	    	if(imageTag.src.match("bulbOn"))
+    	    	{
+    	    		imageTag.src = "pic_bulbOff.gif";
+    	    	}
+    	    	else
+    	    	{
+    	    		imageTag.src = "pic_bulbOn.gif";
+    	    	}
+    	    }
+    	</script>
+    </body>
+</html>
