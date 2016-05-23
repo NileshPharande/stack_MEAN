@@ -1,31 +1,22 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <script type="text/javascript" src="./script_1.js"></script>
+    </head>
     <body>
     	<h1>My first JAVA SCRIPT</h1>
-    	<button type="button" onclick="showDate()">Show Current Date</button>
-    	<p id="demo">None</p>
-    	<img id="myImage" onclick="changeImage()" src="pic_bulbOn.gif" width="100" hight="180">
-    	<p>Toogle bulb</p>
-    	<script type="text/javascript">
-    	
-    	    var showDate = function()
-    	    {
-    	    	document.getElementById("demo").innerHTML = Date();
-    	    }
 
-    	    var changeImage = function()
-    	    {
-    	    	console.log("Coming to change Image.");
-    	    	var imageTag = document.getElementById("myImage");
-    	    	if(imageTag.src.match("bulbOn"))
-    	    	{
-    	    		imageTag.src = "pic_bulbOff.gif";
-    	    	}
-    	    	else
-    	    	{
-    	    		imageTag.src = "pic_bulbOn.gif";
-    	    	}
-    	    }
-    	</script>
+        <p id="demo1">Current date?</p>
+    	<button type="button" onclick="showDate()">Show Current Date</button>
+
+        <p>Click on image to toggle bulb</p>
+    	<img id="myImage" onclick="changeImage()" src="pic_bulbOff.gif" width="100" hight="100">
+
+        <p id="demo2">JS can change style of HTML element.</p>
+        <button type="button" onclick="changeStyle()">Change Style!</button>
+
+        <p>Please enter number between 1 to 10</p>
+        <p id="demo3"></p>
+        <input id="num"><button type="button" onclick="myValidatorFunc()">Validate</button>
     </body>
 </html>
